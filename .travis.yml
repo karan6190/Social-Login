@@ -4,4 +4,4 @@ jdk:
 - oraclejdk8
 # git strips the wrapper jar file so we have to force its download during the build
 install:
-- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+- sudo mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
