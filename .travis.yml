@@ -1,7 +1,7 @@
 sudo : required
 language: java
 jdk:
-- oraclejdk8
+ - oraclejdk8
 # git strips the wrapper jar file so we have to force its download during the build
 install:
-- sudo mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+ - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
